@@ -4,6 +4,7 @@ async function userGetFetchData() {
   userData.forEach((data) => {
     userToCard(data);
   });
+
 }
 const cardContainerRow = document.getElementById("userCardRow");
 function userToCard(users) {
