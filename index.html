@@ -10,32 +10,33 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <style>
-      * {
-        margin: 0 !important;
-        padding: 0 !important;
-        font-size: 17px !important;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-      }
-      .userInfo {
-        padding: 23px !important;
-      }
-      .userInfo h4,
-      h5 {
-        margin: 10px auto !important;
-      }
-    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-IoEcHrEdCV5uC4X9nvZ2F1b8nPc+w/ksHMja36nWdufIoG+eZnPLguRbThZMIUJ1KtD6hsKK3OJD6MvD2IZ4cw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="container-fluid my-4">
-      <div class="row" id="userCardRow"></div>
-    </div>
-
-    <div class="container-fluid my-4">
-      <div class="row d-flex justify-content-center ">
-        <a class="btn btn-success w-25 px-3 py-2" href="posts.html?userId=2">Gönderileri Görüntüle</a>
+    <div class="container-fluid">
+      <div class="form">
+        <form id="searchInput" class="">
+          <input
+            name="id"
+            id="searchInputValue"
+            class="form-control m-3"
+            type="text"
+            placeholder="Kullanıcı Id'sini giriniz"
+          />
+          <button class="btn btn-primary py-2 px-3">Search</button>
+        </form>
       </div>
     </div>
+
+    <div class="container-fluid my-4" id="userCardRow"></div>
 
     <script src="users.js"></script>
     <script

@@ -1,0 +1,32 @@
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 17px !important;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.form {
+  display: flex;
+  justify-content: center;
+  width: 100% !important;
+}
+.form #searchInput {
+  margin: 20px auto !important;
+}
+.card {
+  width: 100% !important;
+  padding: 25px !important;
+  margin: 30px 15% !important;
+  box-shadow: 0 0 2px black;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0.5, 0, 0, 0.7);
+  transform: scale(1.01);
+}
+.card svg {
+  margin: 10px !important;
+}
+.btn {
+  width: 120px;
+}
